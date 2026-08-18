@@ -1,0 +1,74 @@
+version = 0.1
+
+[dev.deploy.parameters]
+stack_name = "optimizer-dev"
+resolve_s3 = true
+s3_prefix = "optimizer-dev"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "StageName=\"dev\""
+image_repositories = ["OptimizerLambdaFunctionDev=619903709069.dkr.ecr.us-east-1.amazonaws.com/abaschedules/optimizer-dev"]
+
+[beta.deploy.parameters]
+stack_name = "optimizer-beta"
+resolve_s3 = true
+s3_prefix = "optimizer-beta"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "StageName=\"beta\""
+image_repositories = ["OptimizerLambdaFunctionBeta=619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerbeta953f033c/optimizerlambdafunctionbeta2d89eaadrepo"]
+
+[inbloom.deploy.parameters]
+stack_name = "optimizer-inbloom"
+resolve_s3 = true
+s3_prefix = "optimizer-inbloom"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "StageName=\"inbloom\""
+image_repositories = ["OptimizerLambdaFunctionInbloom=619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerinbloome6965df0/optimizerlambdafunctioninbloom8e40706crepo"]
+
+[abc.deploy.parameters]
+stack_name = "optimizer-abc"
+resolve_s3 = true
+s3_prefix = "optimizer-abc"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "StageName=\"abc\""
+image_repositories = ["OptimizerLambdaFunctionAbc=619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerabc1c7cb4c6/optimizerlambdafunctionabc0926afcfrepo"]
+
+[app.deploy.parameters]
+stack_name = "optimizer-app"
+resolve_s3 = true
+s3_prefix = "optimizer-app"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+parameter_overrides = "StageName=\"app\""
+image_repositories = ["OptimizerLambdaFunctionApp=619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerappd7e613b1/optimizerlambdafunctionapp79470048repo"]
+
+[jbk.deploy.parameters]
+stack_name = "optimizer-jbk"
+resolve_s3 = true
+s3_prefix = "optimizer-jbk"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+parameter_overrides = "StageName=\"jbk\""
+image_repositories = ["OptimizerLambdaFunctionJbk=619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerjbk183f34b5/optimizerlambdafunctionjbk4f3f8582repo"]
+
+[pedsplus.deploy.parameters]
+stack_name = "optimizer-pedsplus"
+resolve_s3 = true
+s3_prefix = "optimizer-pedsplus"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+parameter_overrides = "StageName=\"pedsplus\""
+image_repositories = ["OptimizerLambdaFunctionPedsPlus=619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerpedsplus413956e7/optimizerlambdafunctionpedsplus85a771cdrepo"]

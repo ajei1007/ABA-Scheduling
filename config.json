@@ -1,0 +1,66 @@
+#!/bin/bash
+sudo yum update -y
+sudo yum install docker -y
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+aws configure set aws_access_key_id AKIAZAVJD56G7BI25XOO && aws configure set aws_secret_access_key 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 && aws configure set default.region us-east-1 && aws configure set default.output json
+sudo aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 619903709069.dkr.ecr.us-east-1.amazonaws.com
+sudo docker pull 619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerbeta953f033c/optimizerlambdafunctionbeta2d89eaadrepo:latest
+docker run -d -p 80:80 619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerbeta953f033c/optimizerlambdafunctionbeta2d89eaadrepo:latest
+sudo yum install -y amazon-cloudwatch-agent
+sudo mkdir /home/ec2-user/config
+cd config
+sudo touch config.json
+sudo echo "{
+    "agent": {
+            "metrics_collection_interval": 60,
+            "run_as_user": "root"
+    },
+    "logs": {
+            "logs_collected": {
+                    "files": {
+                            "collect_list": [
+                                    {
+                                            "file_path": "/var/log/",
+                                            "log_group_name": "myLogs",
+                                            "log_stream_name": "{instance_id}",
+                                            "retention_in_days": -1
+                                    }
+                            ]
+                    }
+            }
+    },
+    "metrics": {
+            "aggregation_dimensions": [
+                    [
+                            "InstanceId"
+                    ]
+            ],
+            "append_dimensions": {
+                    "AutoScalingGroupName": "${aws:AutoScalingGroupName}",
+                    "ImageId": "${aws:ImageId}",
+                    "InstanceId": "${aws:InstanceId}",
+                    "InstanceType": "${aws:InstanceType}"
+            },
+            "metrics_collected": {
+                    "disk": {
+                            "measurement": [
+                                    "used_percent"
+                            ],
+                            "metrics_collection_interval": 60,
+                            "resources": [
+                                    "*"
+                            ]
+                    },
+                    "mem": {
+                            "measurement": [
+                                    "mem_used_percent"
+                            ],
+                            "metrics_collection_interval": 60
+                    },
+                    "statsd": {
+                            "metrics_aggregation_interval": 60,
+                            "metrics_collection_interval": 10,
+                            "service_address": ":8125"}}}}"        > config.json
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/home/ec2-user/config/config.json
+

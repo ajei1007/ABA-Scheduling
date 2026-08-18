@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  flask-app:
+    container_name: automation_app
+    build:
+      context: .                       # build the image from the current dir
+      dockerfile: Dockerfile           # change if yours has a different name
+    image: optimizerlambdafunctionabc:local
+    ports:
+      - "4000:80"                      # localhost:4000 → container:80
+    volumes:
+      - ./:/var/task                   # hot-reload your code
+    environment:                       # inline, non-secret vars
+      FLASK_ENV: development
+      FLASK_APP: app2.py
+      BACKEND_URL: "https://production-api.abaschedules.com/api"
+      # BACKEND_URL: "http://host.docker.internal:8080/api"
+      #BACKEND_URL: "http://192.168.119.128:8080/api"
+      #BACKEND_URL: "https://beta-api.abaschedules.com/api"
+    env_file:                          # **DON’T commit this file**
+      - .aws.env                       # holds AWS creds & region
+    # command: tail -f /dev/null           # keep container running for manual testing
+  # pytest:
+  #   container_name: pytest_runner
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   image: optimizerlambdafunctionabc:test
+  #   volumes:
+  #     - ./:/var/task
+  #   environment:
+  #     BACKEND_URL: "https://production-api.abaschedules.com/api"
+  #   command: ["pytest", "-v", "--disable-warnings", "tests/"]

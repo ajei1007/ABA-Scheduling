@@ -1,0 +1,2246 @@
+[
+            {
+                        "id": "3280fe37-68ef-40eb-af41-5aa9a063271c",
+                        "name": "Accelerate",
+                        "title": "Accelerate",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "darkcyan",
+                        "location_type": null
+            },
+            {
+                        "id": "72850539-6202-42e8-9eeb-d7c42aa2d16e",
+                        "name": "Adam Evans",
+                        "title": "Adam Evans",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Hannah Murray's Team",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "English"
+                        ],
+                        "address": "305 Waterford Ct Southlake TX 76092",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "d00789d1-180f-45d9-8795-8ace9bc1534d",
+                        "name": "Adebare Oshikoya",
+                        "title": "Adebare Oshikoya",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Moderate Severity",
+                                    "Latresia Walters Team",
+                                    "English"
+                        ],
+                        "address": "3804 Crown Ct Bedford TX 76021",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "661650b0-c24a-4234-a0ab-1e7c879dfc0c",
+                        "name": "Admin",
+                        "title": "Admin",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "rosybrown",
+                        "location_type": null
+            },
+            {
+                        "id": "61dc16a5-907c-410a-bb25-92bdae16530e",
+                        "name": "ADOS",
+                        "title": "ADOS",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "mediumseagreen",
+                        "location_type": null
+            },
+            {
+                        "id": "0bb13df6-2d04-471e-805d-2d69adce6fb6",
+                        "name": "Adriana Calderon",
+                        "title": "Adriana Calderon",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Latresia Walters Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1997-05-13",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "c1b14b24-422f-4e3e-a27d-70a57eb87bf7",
+                        "name": "Aetna",
+                        "title": "Aetna",
+                        "resourceTypeId": null,
+                        "type": "Funder",
+                        "roles": [
+                                    "Funder",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Aetna"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "09ee8f60-4984-4ce7-ac48-72846772803c",
+                        "name": "Allison Levine",
+                        "title": "Allison Levine",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1996-06-22",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "c446cf60-19fa-4bae-90e9-2ed8fcfe7783",
+                        "name": "Amy Miller",
+                        "title": "Amy Miller",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "CD",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Amy Miller's Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1985-03-21",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "3516f630-0908-457d-b4b2-7c6c84f71a75",
+                        "name": "Anders Thulin",
+                        "title": "Anders Thulin",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Jenna Courtney's Team",
+                                    "English"
+                        ],
+                        "address": "1224 Westwood dr Keller TX 76262",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "3f8bb4f9-a77d-4cb9-8c0c-a2ebaeb01c8a",
+                        "name": "Andrew Wang",
+                        "title": "Andrew Wang",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Hannah Murray's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "5707 Crowley Boulevard Midland TX 79707",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "270959c0-9d0b-4ef3-a297-bffdf7982efd",
+                        "name": "Anthonia Onalaja",
+                        "title": "Anthonia Onalaja",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Latresia Walters Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1993-10-17",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "72afceae-9a5a-4391-9d32-ea84b85756d9",
+                        "name": "Ashton Browndyke",
+                        "title": "Ashton Browndyke",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Aetna",
+                                    "Low Severity",
+                                    "English"
+                        ],
+                        "address": "4137 Wilderness Pass Roanoke TX 76262",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "0ed331d2-a876-44a2-90e0-9c46cb1ad062",
+                        "name": "Assessment",
+                        "title": "Assessment",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "coral",
+                        "location_type": null
+            },
+            {
+                        "id": "c22290c9-442a-4fc9-9150-ab54943c218a",
+                        "name": "Aubrey Mayfield",
+                        "title": "Aubrey Mayfield",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1996-09-27",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "160d8615-8255-4e6f-ba90-f60ce3d60cc3",
+                        "name": "Bailey Duty",
+                        "title": "Bailey Duty",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Latresia Walters Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1997-02-07",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "c8064249-50fd-4530-9f1a-e1058ffbaa35",
+                        "name": "Bayley Sirmon",
+                        "title": "Bayley Sirmon",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Hannah Murray's Team",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1998-05-06",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "72936f60-77cb-48e1-ac27-258303514ff0",
+                        "name": "BCBA Team Meeting",
+                        "title": "BCBA Team Meeting",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "darkred",
+                        "location_type": null
+            },
+            {
+                        "id": "bf2e03ef-620a-472f-ac4b-25a0769ee00a",
+                        "name": "BCBS of Texas",
+                        "title": "BCBS of Texas",
+                        "resourceTypeId": null,
+                        "type": "Funder",
+                        "roles": [
+                                    "Funder",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "BCBS of Texas"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "cd51f02a-37c7-40ac-97c2-c168097c1357",
+                        "name": "Bethany Le",
+                        "title": "Bethany Le",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1998-12-09",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "3db36638-5f30-4b23-86d8-76d0f41367d7",
+                        "name": "Bill Welsh",
+                        "title": "Bill Welsh",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "Super Admin",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Test Team"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "ee53a0c4-3ff4-46be-a2be-8c5981c8bf9e",
+                        "name": "Block A",
+                        "title": "Block A",
+                        "resourceTypeId": null,
+                        "type": "Block",
+                        "roles": [
+                                    "Block",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "c2c8fa42-d7dd-41df-b210-b66e2ff90650",
+                        "name": "Block/Out",
+                        "title": "Block/Out",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "black",
+                        "location_type": null
+            },
+            {
+                        "id": "f6e9b38f-00d3-4556-bdc6-c87ba796caa4",
+                        "name": "Break",
+                        "title": "Break",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "pink",
+                        "location_type": null
+            },
+            {
+                        "id": "2b06ce8a-d1f6-4c28-b088-f1915ef47ca5",
+                        "name": "Brent Lybertt",
+                        "title": "Brent Lybertt",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Latresia Walters Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1982-04-21",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "2fe1adb6-62ee-463d-a680-313271854423",
+                        "name": "Brittany Bihun",
+                        "title": "Brittany Bihun",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1997-09-16",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "802b4f0c-3858-480f-88d4-e155661a0e4c",
+                        "name": "Callum Clark",
+                        "title": "Callum Clark",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Moderate Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "304 Fair Oaks Blvd Euless TX",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "999c041d-a1a0-4fe8-9754-00940e3c94e7",
+                        "name": "Cash Winder",
+                        "title": "Cash Winder",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Hannah Murray's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "907 Virginia St. Graham TX 76450",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "248dbfdd-551e-4253-b287-98745835c785",
+                        "name": "CDE",
+                        "title": "CDE",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "cadetblue",
+                        "location_type": null
+            },
+            {
+                        "id": "d8b3fb0a-d419-43ce-92b8-48c65fbb4f7d",
+                        "name": "Chalsie White",
+                        "title": "Chalsie White",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1996-01-08",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "c63b10e4-0d53-4d16-85f8-23202ff5e12b",
+                        "name": "Christian Fischer",
+                        "title": "Christian Fischer",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Optum",
+                                    "Jenna Courtney's Team",
+                                    "High Severity",
+                                    "English"
+                        ],
+                        "address": "1107 Longford Circle Southlake TX 76092",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "e1d2aac4-4b90-4b12-8495-5667492ec845",
+                        "name": "Cigna",
+                        "title": "Cigna",
+                        "resourceTypeId": null,
+                        "type": "Funder",
+                        "roles": [
+                                    "Funder",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "c46233cb-9135-49d1-b3c4-7a4b5f9799a6",
+                        "name": "Clarisvel Carranco",
+                        "title": "Clarisvel Carranco",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BCBA",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Cigna",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1990-03-13",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "967de35e-f327-4583-ba62-a83fb4e3408f",
+                        "name": "Dalton Carpenter",
+                        "title": "Dalton Carpenter",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Latresia Walters Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "326 Longview Dr Keller TX 76248",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "20ffb22b-41e1-4f60-b275-7a56e69abcbd",
+                        "name": "Dante Pernell",
+                        "title": "Dante Pernell",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "OM",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1986-10-23",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "8feef26c-3e60-4970-978f-d9c1867dd321",
+                        "name": "Deckard Bohn",
+                        "title": "Deckard Bohn",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Aetna",
+                                    "High Severity",
+                                    "English"
+                        ],
+                        "address": "1912 Toplea Dr Euless TX 76040",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "2faf27ca-9120-486c-9738-83714f0ee50d",
+                        "name": "Direct Therapy",
+                        "title": "Direct Therapy",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "cornflowerblue",
+                        "location_type": null
+            },
+            {
+                        "id": "dbc2840e-362f-40cc-aa47-e37196f15cd1",
+                        "name": "Drive",
+                        "title": "Drive",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "blue",
+                        "location_type": null
+            },
+            {
+                        "id": "b9b9182f-2442-4384-a7e6-1274c996e553",
+                        "name": "Elevate Meeting",
+                        "title": "Elevate Meeting",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "darkgoldenrod",
+                        "location_type": null
+            },
+            {
+                        "id": "995522be-5cd3-41d9-b32c-ec047c937345",
+                        "name": "Eli Hammack",
+                        "title": "Eli Hammack",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Optum",
+                                    "High Severity",
+                                    "English"
+                        ],
+                        "address": "1808 Firenze St Keller TX 76262",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "d8e63ae2-3d5f-4218-bfaa-086fdbc1d2c2",
+                        "name": "Evelyn Hagerdoorn",
+                        "title": "Evelyn Hagerdoorn",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Hannah Murray's Team",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "2000-03-21",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "dae5dcd4-af4d-486e-b0f9-9166577b8250",
+                        "name": "Family Guidance",
+                        "title": "Family Guidance",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "darkkhaki",
+                        "location_type": null
+            },
+            {
+                        "id": "c4d6082a-7681-45d6-b12f-45b3a00a05d9",
+                        "name": "Gavin Carpenter",
+                        "title": "Gavin Carpenter",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Latresia Walters Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "326 Longview Dr Keller TX 76248",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "692d1ef0-35f8-4b24-83a3-aca43a5709f2",
+                        "name": "Hannah Murray",
+                        "title": "Hannah Murray",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BCBA",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Hannah Murray's Team",
+                                    "Multiplan",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1995-11-14",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "a098e68f-8793-41ba-828f-0e1cb0966e06",
+                        "name": "Ian Hawthorne",
+                        "title": "Ian Hawthorne",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Latresia Walters Team",
+                                    "High Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "3041 Maple Creek Dr Fort Worth TX 76177",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "9a2dc147-ddf5-417e-8c2a-b5923fd9466f",
+                        "name": "Jacob Ogujiofor",
+                        "title": "Jacob Ogujiofor",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Latresia Walters Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "900 Grange Hall Drive Apt 2103 Euless TX 76039",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "8b87c72b-bf18-45d5-b697-eebeb31e1867",
+                        "name": "Jacqueline Baker",
+                        "title": "Jacqueline Baker",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RCD",
+                                    "Employee",
+                                    "Person",
+                                    "Resource",
+                                    "Admin"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Test Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "f006d44c-590c-4a49-8d3e-6701f12fa0de",
+                        "name": "Jenna Buczkowski",
+                        "title": "Jenna Buczkowski",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "2000-10-15",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "732c600f-253d-4061-a4d4-06fbdedb2996",
+                        "name": "Jenna Courtney",
+                        "title": "Jenna Courtney",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BCBA",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Jenna Courtney's Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1993-08-11",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "7a941010-68da-42be-8cdf-f7d272e3ff73",
+                        "name": "Joria Danzy",
+                        "title": "Joria Danzy",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Latresia Walters Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1997-08-27",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "291ad7fd-7d95-417a-aedc-1b60b3aa636a",
+                        "name": "Joshua Hanes",
+                        "title": "Joshua Hanes",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Hannah Murray's Team",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1990-03-03",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "cfedf369-fd9d-4264-9d9d-6967f74a5bcb",
+                        "name": "Katelyn Carlson",
+                        "title": "Katelyn Carlson",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1996-10-20",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "ffc6a72d-fc1f-47d9-943f-49f31c385ee7",
+                        "name": "Keaton Hely-Bigler",
+                        "title": "Keaton Hely-Bigler",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Jenna Courtney's Team",
+                                    "English"
+                        ],
+                        "address": "1216 Westwood Dr. Keller TX 76262",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "52cc1b31-3884-47f2-b291-44d50d572e78",
+                        "name": "Kelli Buock",
+                        "title": "Kelli Buock",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1978-06-22",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "cd146ece-d936-4cf3-9295-7c72b81c5261",
+                        "name": "Kelly Tatera",
+                        "title": "Kelly Tatera",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RDO",
+                                    "Employee",
+                                    "Person",
+                                    "Resource",
+                                    "RBT",
+                                    "Admin"
+                        ],
+                        "subgroups": [
+                                    "Moderate Severity",
+                                    "Test Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "910055d2-896c-4da6-96d6-31b2941f253a",
+                        "name": "Latresia Walters",
+                        "title": "Latresia Walters",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BCBA",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Multiplan",
+                                    "Latresia Walters Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1985-06-20",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "ad5890c3-bbee-4a92-9726-23b2a5112e8f",
+                        "name": "Laura De Leon",
+                        "title": "Laura De Leon",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Jenna Courtney's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "1924 Huntersridge Dr. Grapevine TX 76051",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "b5f653bc-ee9d-4c74-9183-b8557aafefbb",
+                        "name": "Liam Solonick",
+                        "title": "Liam Solonick",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Jenna Courtney's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "4270 Hearthside Dr. Grapevine TX 76051",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "a9ba5910-3723-4d52-bfcf-e9081c04d581",
+                        "name": "Lindsay Rubino",
+                        "title": "Lindsay Rubino",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "2000-07-14",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "7bd835c3-7855-4855-a73e-f6b40b5b0dc4",
+                        "name": "Lunch",
+                        "title": "Lunch",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "darkgray",
+                        "location_type": null
+            },
+            {
+                        "id": "243ee178-9360-44c3-bbc2-f98137afefe2",
+                        "name": "Lynishia Farrell",
+                        "title": "Lynishia Farrell",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1992-08-16",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "9444b70c-e8cb-4fec-9ab3-72950ec62b81",
+                        "name": "Maddie Edwards",
+                        "title": "Maddie Edwards",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "CAA",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1995-10-08",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "a28e67e1-fca0-49a1-b859-ce919160b71a",
+                        "name": "Maegan Crutchfield",
+                        "title": "Maegan Crutchfield",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1996-08-18",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "e06a3867-d990-415a-94fe-be1fc18f4257",
+                        "name": "Mason Myers",
+                        "title": "Mason Myers",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "English"
+                        ],
+                        "address": "8117 Long Trail Dr North Richland Hills TX 76182",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "d20bce9a-0f2f-46a1-9781-b1c230768f7c",
+                        "name": "Mason Roberts",
+                        "title": "Mason Roberts",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Hannah Murray's Team",
+                                    "Moderate Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "2914 Scarborough Lane WestColleyville, Texas 76034United States",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "07b3201a-b614-4782-ac60-e1ef16530e71",
+                        "name": "Matteo Fulp",
+                        "title": "Matteo Fulp",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Surest",
+                                    "Moderate Severity",
+                                    "Latresia Walters Team",
+                                    "English"
+                        ],
+                        "address": "13858 High Mesa Rd Roanoke TX 76262",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "1bbf7eab-5341-42fb-ab8c-ca3912937103",
+                        "name": "Matthew Myers",
+                        "title": "Matthew Myers",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "English"
+                        ],
+                        "address": "8117 Long Trail Dr North Richland Hills TX 76182",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "1c44f745-915c-4f32-8033-d317065ac345",
+                        "name": "Meagan Escoe",
+                        "title": "Meagan Escoe",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Hannah Murray's Team",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1996-10-03",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "d84a2985-52c0-4684-b8dc-faf84bf65c15",
+                        "name": "Medicare",
+                        "title": "Medicare",
+                        "resourceTypeId": null,
+                        "type": "Funder",
+                        "roles": [
+                                    "Funder",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Medicare"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "c34e3216-f4d3-4602-9076-ba23417eef63",
+                        "name": "Melissa Moreno",
+                        "title": "Melissa Moreno",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "Super Admin",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Test Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "f26baafb-8001-4268-a7dc-cf79b6b71492",
+                        "name": "Melody Grantom",
+                        "title": "Melody Grantom",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Hannah Murray's Team",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1996-08-05",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "b0be04a3-a252-44f0-8f12-c8da743c7a82",
+                        "name": "Michelle Sokolowski",
+                        "title": "Michelle Sokolowski",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1988-09-07",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "e2c0eb48-1473-46fd-8511-03c51d5068d3",
+                        "name": "Multiplan",
+                        "title": "Multiplan",
+                        "resourceTypeId": null,
+                        "type": "Funder",
+                        "roles": [
+                                    "Funder",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Multiplan"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "96c9e717-0cc8-4e3a-b47d-0920dfc151a7",
+                        "name": "Nihal Gowda",
+                        "title": "Nihal Gowda",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "English"
+                        ],
+                        "address": "3313 Rembrandt Avenue Odessa TX 79765",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "ee01c6d2-68dd-45f1-973b-f5041698aec6",
+                        "name": "Noah Taylor",
+                        "title": "Noah Taylor",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "Low Severity",
+                                    "English"
+                        ],
+                        "address": "1708 Toplea D Euless TX 76040",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "696c44f3-a037-4acb-aee3-29551c0859a2",
+                        "name": "Optum",
+                        "title": "Optum",
+                        "resourceTypeId": null,
+                        "type": "Funder",
+                        "roles": [
+                                    "Funder",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Optum"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "68622b18-fe70-4366-bd13-124355e6aa55",
+                        "name": "Overlap",
+                        "title": "Overlap",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "mediumturquoise",
+                        "location_type": null
+            },
+            {
+                        "id": "d4be9ae7-711f-44d8-8bfd-7b487259e5d8",
+                        "name": "Qadir Oladunni",
+                        "title": "Qadir Oladunni",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Moderate Severity",
+                                    "Latresia Walters Team",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": "209 Arbor Glen Dr Euless TX 76039",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "84aee335-ab4d-41e4-8b7f-7a25026627fe",
+                        "name": "Reyansh Asileti",
+                        "title": "Reyansh Asileti",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "English"
+                        ],
+                        "address": "7480 Reverchon Dr Irving TX 75063",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "33b87de5-6061-42f8-b047-ac13c8ea0a4b",
+                        "name": "Riham Abbas",
+                        "title": "Riham Abbas",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Hannah Murray's Team",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1999-01-05",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "7cd5c8ef-f830-4d3c-bf7a-c9acd3ec3719",
+                        "name": "Roshonda Streck",
+                        "title": "Roshonda Streck",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "High Severity",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1985-12-26",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "24e66861-31c4-4bda-8208-c168505c075f",
+                        "name": "Sade Ard",
+                        "title": "Sade Ard",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "BT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1999-06-14",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "2985d60d-fd4e-4308-8867-e3c43c429a9a",
+                        "name": "Saira Sundrani",
+                        "title": "Saira Sundrani",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Hannah Murray's Team",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1996-10-17",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "2e3a5bbb-dc2f-4ba5-9c34-16d28966609d",
+                        "name": "SDLS",
+                        "title": "SDLS",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "deeppink",
+                        "location_type": null
+            },
+            {
+                        "id": "9b20723e-d21e-49f6-919a-d60b28bb59d5",
+                        "name": "Shanna Blair",
+                        "title": "Shanna Blair",
+                        "resourceTypeId": null,
+                        "type": "Employee",
+                        "roles": [
+                                    "RBT",
+                                    "Employee",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Cigna",
+                                    "Surest",
+                                    "Optum",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "Multiplan",
+                                    "Medicare",
+                                    "Jenna Courtney's Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": "1992-07-09",
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "11adfb19-1b99-468f-8908-a1ad7b2221fb",
+                        "name": "Snow White",
+                        "title": "Snow White",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Test Team",
+                                    "Low Severity",
+                                    "BCBS of Texas",
+                                    "English"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "5656c42a-98e2-499f-aa4d-83421c13521c",
+                        "name": "Southlake",
+                        "title": "Southlake",
+                        "resourceTypeId": null,
+                        "type": "Location",
+                        "roles": [
+                                    "Clinic",
+                                    "Location",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": "230 S. Nolen Drive, Building 3, Southlake, TX 76092",
+                        "capacity": 100,
+                        "birthday": null,
+                        "color": "blue",
+                        "location_type": null
+            },
+            {
+                        "id": "126cb620-c4e8-4b98-9a5e-e687c8584dbe",
+                        "name": "Staff Meeting",
+                        "title": "Staff Meeting",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "crimson",
+                        "location_type": null
+            },
+            {
+                        "id": "f39d479c-ea0f-4dcf-86e1-3e47c19328c7",
+                        "name": "Supervision",
+                        "title": "Supervision",
+                        "resourceTypeId": null,
+                        "type": "Activity",
+                        "roles": [
+                                    "Activity",
+                                    "Resource"
+                        ],
+                        "subgroups": [],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "purple",
+                        "location_type": null
+            },
+            {
+                        "id": "e7414ab1-26a0-4c76-bf75-877e354c627c",
+                        "name": "Surest",
+                        "title": "Surest",
+                        "resourceTypeId": null,
+                        "type": "Funder",
+                        "roles": [
+                                    "Funder",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Surest"
+                        ],
+                        "address": null,
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            },
+            {
+                        "id": "0468c2d7-59d8-4034-85e1-68c5c2b9fbb2",
+                        "name": "Theodore Russell",
+                        "title": "Theodore Russell",
+                        "resourceTypeId": null,
+                        "type": "Client",
+                        "roles": [
+                                    "ABA",
+                                    "Client",
+                                    "Person",
+                                    "Resource"
+                        ],
+                        "subgroups": [
+                                    "Clarisvel Carranco's Team",
+                                    "Moderate Severity",
+                                    "Aetna",
+                                    "English"
+                        ],
+                        "address": "2440 Lazy Dog Lane Northlake TX 76247",
+                        "capacity": null,
+                        "birthday": null,
+                        "color": "green",
+                        "location_type": null
+            }
+]

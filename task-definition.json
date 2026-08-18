@@ -1,0 +1,40 @@
+{
+    "family": "optimizerTaskDef1",
+    "containerDefinitions": [
+        {
+            "name": "optimizerContainer1",
+            "image": "619903709069.dkr.ecr.us-east-1.amazonaws.com/optimizerbeta953f033c/optimizerlambdafunctionbeta2d89eaadrepo:latest",
+            "memory": 12000,
+            "cpu": 12000,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-create-group": "true",
+                    "awslogs-group": "/ecs/optimizerTaskDef1",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs"
+                },
+                "secretOptions": []
+            }
+        }
+    ],
+    "taskRoleArn": "arn:aws:iam::619903709069:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::619903709069:role/ecsTaskExecutionRole",
+    "networkMode": "bridge",
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "memory": "127445",
+    "cpu": "22768"
+}

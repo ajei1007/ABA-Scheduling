@@ -1,0 +1,72 @@
+# Note that this is currently deploying environments/beta, even 
+# though this is supposed to be deploying a 'development' environment.
+#
+# The 'development' optimizer environment is in fact connected to _beta_, whereas 
+# _beta_ is connected to production.
+
+name: Development Environment
+
+on:
+  push:
+    branches:
+      - "environments/beta"
+
+jobs:
+  solution-generator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Install AWS SAM CLI
+        run: |
+          pip install --user aws-sam-cli
+
+      - name: Build 
+        run: |
+          sam build --template template-dev.yml
+
+      - name: Deploy
+        run: |
+          sam deploy --config-env dev --no-confirm-changeset --no-fail-on-empty-changeset
+  ec2-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: Log in to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v2
+      - name: Build, tag, and push Docker image to ECR
+        env:
+          ECR_REGISTRY: "619903709069.dkr.ecr.us-east-1.amazonaws.com"
+          ECR_REPOSITORY: "abaschedules/optimizer-server/beta"
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          # Build the Docker image
+          docker build -t $ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
+          # Tag the image with the sha, and also as :latest
+          docker tag $ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker tag $ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          # Push the image to ECR with both tags
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+
+

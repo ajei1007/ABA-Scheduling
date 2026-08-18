@@ -1,0 +1,37 @@
+name: App
+
+on:
+  pull_request:
+    branches: ["main"]
+    types:
+      - closed
+jobs:
+  solution-generator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Install AWS SAM CLI
+        run: |
+          pip install --user aws-sam-cli
+
+      - name: Build
+        run: 
+          sam build --template template-prod.yml
+
+      - name: Deploy 
+        run: |
+          sam deploy --config-env app --no-confirm-changeset --no-fail-on-empty-changeset

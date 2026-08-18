@@ -1,0 +1,157 @@
+name: Deployment Report to JIRA
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        type: string
+        required: true
+      deployment_name:
+        type: string
+        required: true
+      description:
+        type: string
+        required: true
+      url:
+        type: string
+        required: true
+    secrets:
+      SLACK_WEBHOOK:
+        required: true
+      JIRA_API_TOKEN:
+        required: true
+      JIRA_BASE_URL:
+        required: true
+
+jobs:
+  report-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Check variables/secrets
+        run: |
+          echo "SLACK_WEBHOOK is ${{ secrets.SLACK_WEBHOOK }}"
+          echo "JIRA_API_TOKEN is ${{ secrets.JIRA_API_TOKEN }}"
+          echo "JIRA_BASE_URL is ${{ secrets.JIRA_BASE_URL }}"
+          echo "environment is ${{ inputs.environment }}"
+          echo "deployment_name is ${{ inputs.deployment_name }}"
+          echo "url is ${{ inputs.url }}"
+
+      # Extract Jira Issue Keys
+      - name: Extract Jira Issue Keys
+        id: extract-keys
+        run: |
+          ISSUE_KEYS=$(git log -1 --pretty=format:%s | grep -o -E '[A-Z]+-[0-9]+' | tr '\n' ',' | sed 's/,$//')
+          echo "Found Jira Issues: $ISSUE_KEYS"
+          echo "issue_keys=$ISSUE_KEYS" >> $GITHUB_OUTPUT
+
+      # Report Deployment to Jira
+      - name: Report Deployment to Jira
+        run: |
+          # Convert ISSUE_KEYS into JSON array
+          IFS=',' read -ra KEYS <<< "${{ steps.extract-keys.outputs.issue_keys }}"
+          ISSUE_KEYS_JSON=$(printf '%s\n' "${KEYS[@]}" | jq -R . | jq -s .)
+          
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.JIRA_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"deployments\": [
+                {
+                  \"name\": \"${{ inputs.deployment_name }}\",
+                  \"url\": \"${{ inputs.url }}\",
+                  \"description\": \"${{ inputs.description }}\",
+                  \"environment\": \"${{ inputs.environment }}\",
+                  \"state\": \"SUCCESS\",
+                  \"lastUpdated\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",
+                  \"associations\": [
+                    {
+                      \"associationType\": \"issueKeys\",
+                      \"values\": $ISSUE_KEYS_JSON
+                    }
+                  ]
+                }
+              ]
+            }" \
+            "${{ secrets.JIRA_BASE_URL }}/rest/deployments/0.1/bulk"
+
+      # Format JIRA Issue Keys as Clickable Links
+      - name: Format JIRA Issue Links
+        id: format-issues
+        run: |
+          if [ -z "${{ steps.extract-keys.outputs.issue_keys }}" ]; then
+            FORMATTED_ISSUES="• None"
+          else
+            IFS=',' read -ra ISSUES <<< "${{ steps.extract-keys.outputs.issue_keys }}"
+            FORMATTED_ISSUES=""
+            for ISSUE in "${ISSUES[@]}"; do
+              FORMATTED_ISSUES+="• <${{ secrets.JIRA_BASE_URL }}/browse/${ISSUE}|${ISSUE}>\n"
+            done
+          fi
+          # Remove trailing newline
+          FORMATTED_ISSUES=$(echo -e "$FORMATTED_ISSUES" | sed '$ s/\n$//')
+          echo "formatted_issues<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$FORMATTED_ISSUES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      # Notify on Success with Clickable JIRA Links
+      - name: Notify on Success
+        if: success()
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data "{
+            \"text\": \"✅ *Deployment to \`${{ inputs.environment }}\` environment succeeded.*\",
+            \"attachments\": [
+              {
+                \"color\": \"#36a64f\",
+                \"fields\": [
+                  {
+                    \"title\": \"Deployment Name\",
+                    \"value\": \"${{ inputs.deployment_name }}\",
+                    \"short\": false
+                  },
+                  {
+                    \"title\": \"JIRA Issues Deployed\",
+                    \"value\": \"${{ steps.format-issues.outputs.formatted_issues }}\",
+                    \"short\": false
+                  },
+                  {
+                    \"title\": \"View Details\",
+                    \"value\": \"<${{ inputs.url }}|Click here>\",
+                    \"short\": false
+                  }
+                ]
+              }
+            ]
+          }" ${{ secrets.SLACK_WEBHOOK }}
+
+      # Notify on Failure with JIRA Issue Attempts
+      - name: Notify on Failure
+        if: failure()
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data "{
+            \"text\": \"🚨 *Deployment reporting to JIRA failed for \`${{ inputs.environment }}\` environment.*\",
+            \"attachments\": [
+              {
+                \"color\": \"#e01e5a\",
+                \"fields\": [
+                  {
+                    \"title\": \"Deployment Name\",
+                    \"value\": \"${{ inputs.deployment_name }}\",
+                    \"short\": false
+                  },
+                  {
+                    \"title\": \"JIRA Issues Attempted\",
+                    \"value\": \"${{ steps.format-issues.outputs.formatted_issues }}\",
+                    \"short\": false
+                  },
+                  {
+                    \"title\": \"View Details\",
+                    \"value\": \"<${{ inputs.url }}|Click here>\",
+                    \"short\": false
+                  }
+                ]
+              }
+            ]
+          }" ${{ secrets.SLACK_WEBHOOK }}

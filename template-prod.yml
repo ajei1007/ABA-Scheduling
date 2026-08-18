@@ -1,0 +1,67 @@
+Transform: AWS::Serverless-2016-10-31
+Description: App | ABA Schedules Optimizer.
+Parameters:
+  StageName:
+    Type: String
+    Default: app
+
+Resources:
+  HttpApi:
+    Type: 'AWS::Serverless::HttpApi'
+    Properties:
+      StageName: app
+      CorsConfiguration:
+        AllowOrigins:
+          - '*'
+        AllowHeaders:
+          - 'Content-Type'
+        AllowMethods:
+          - 'OPTIONS'
+          - 'GET'
+          - 'POST'
+          - 'PUT'
+          - 'DELETE'
+
+  OptimizerLambdaFunctionApp:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: OptimizerLambdaHandlerFunctionApp
+      PackageType: Image
+      ImageUri: optimizerlambdafunctionapp:latest
+      Timeout: 900
+      MemorySize: 10240
+      Environment:
+        Variables:
+          BACKEND_URL: https://production-api.abaschedules.com/api
+      Events:
+        RootRoute:
+          Type: HttpApi
+          Properties:
+            ApiId:
+              Ref: HttpApi
+            Path: /
+            Method: get
+        PostAutomation:
+          Type: HttpApi
+          Properties:
+            ApiId:
+              Ref: HttpApi
+            Path: /automation
+            Method: post
+        PostSolutionGenerator:
+          Type: HttpApi
+          Properties:
+            ApiId:
+              Ref: HttpApi
+            Path: /solution_generator
+            Method: post
+
+    Metadata:
+      Dockerfile: Dockerfile_solutionGenerator.dev
+      DockerContext: .
+
+Outputs:
+  HttpApiUrl:
+    Description: URL of your API endpoint
+    Value:
+      Fn::Sub: 'https://${HttpApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/${StageName}/'
